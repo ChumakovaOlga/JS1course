@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3_4</title>
+</head>
+<body>
+<div class="menu"></div>
+
+<!-- Задание. Добавьте в div с классом .menu следующую разметку:
+<a href="#">link</a>
+используя метод insertAdjacentHTML.
+-->
+<script>
+    'use strict';
+    let div = document.querySelector('.menu');
+    div.insertAdjacentHTML("beforeend",'<a href="#">link</a>');
+    console.log(div);
+</script>
+</body>
+</html>
