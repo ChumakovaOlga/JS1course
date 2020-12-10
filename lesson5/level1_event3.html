@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event3</title>
+</head>
+<body>
+<button>Кнопка</button>
+<button class="btn">Кнопка с классом btn</button>
+<button>Кнопка</button>
+
+<!-- Задание. Сделайте, чтобы по клику по кнопке с классом .btn появлялся
+alert('клик') -->
+<script>
+    'use strict';
+    let button = document.querySelector('.btn');
+    button.addEventListener('click',function(event){
+        alert('клик');
+    })
+</script>
+</body>
+</html>

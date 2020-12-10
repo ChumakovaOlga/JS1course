@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="one two three"></div>
+
+<!--
+Задание.
+1. Сохраните в переменную тег div.
+2. Создайте переменную classes, и в нее сохраните значение свойства classList.
+3. C помощью forEach переберите classes и выведите каждый класс в консоль.
+ -->
+</body>
+<script>
+    'use strict';
+    let el = document.querySelector('div');
+    let classes = el.classList;
+    classes.forEach(function(classList) {
+        console.log(classList);
+    })
+</script>
+</html>

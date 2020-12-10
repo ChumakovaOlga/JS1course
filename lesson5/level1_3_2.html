@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3_2</title>
+</head>
+<body>
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+</ul>
+
+<!-- Задание. Найдите элемент с классом .nav-link и используя метод toggle из свойства classList
+у элемента, добавьте или уберите класс .active. -->
+<script>
+    'use strict';
+    let el = document.querySelector('.nav-link');
+    el.classList.toggle('active');
+    console.log(el);
+
+</script>
+</body>
+</html>

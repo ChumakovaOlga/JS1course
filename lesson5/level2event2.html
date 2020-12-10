@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p class="first second third">
+    Lorem ipsum dolor sit.
+</p>
+
+<!--
+Задание.
+1. Назначьте обработку клика по параграфу, у функции обработчика объявите
+параметр event.
+2. При клике выведите в консоль event.target.classList
+3. Переберите с помощью forEach event.target.classList и выведите каждый класс
+в консоль.
+-->
+<script>
+    'use strict';
+    let par = document.querySelector('p');
+    par.addEventListener('click', function(event){
+let classList = event.target.classList;
+console.log(event.target.classList);
+        classList.forEach(function(event) {
+            console.log(event);
+        });
+
+    })
+</script>
+</body>
+</html>
